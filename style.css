@@ -57,15 +57,15 @@ body {
   color: black;
 }
 .videos {
-  margin: 14px;
-  max-width: 100%;
+  padding:  14px;
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
    gap: 4px;
 }
 
 .video-card {
-  max-width: 360px;
+  min-width: 340px;
+  min-height: fit-content;
   border-radius: 14px;
   cursor: pointer;
   margin-bottom: 16px;
@@ -121,12 +121,14 @@ body {
 @media (max-width: 900px) {
   .videos {
     grid-template-columns: repeat(2, 1fr);
+    padding:0;
   }
 }
 
 @media (max-width: 600px) {
   .videos {
     grid-template-columns: 1fr;
+    padding:0;
   }
 
   .video-card {
