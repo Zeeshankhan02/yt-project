@@ -25,14 +25,12 @@ body {
   bottom: 4em;
   right: 8em;
   border-radius: 45px;
-}
-.top a {
   font-size: 18px;
   font-weight: bolder;
   text-decoration: none;
-  display: block;
   color: white;
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
