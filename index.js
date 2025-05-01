@@ -1,4 +1,5 @@
-const categories = ["<i class='fa-solid fa-compass'></i>","All","Music","Mixes","Data Science","APIs","Coke Studio","Indian popbmusic", "System Design", "Jukebox","Comentary","Webpages","Playlists","Live","Chill-Out music","Dramedy","Ghazal","Rapping","Recently Uploaded"," New to you"];
+document.addEventListener("DOMContentLoaded",()=>{
+  const categories = ["<i class='fa-solid fa-compass'></i>","All","Music","Mixes","Data Science","APIs","Coke Studio","Indian popbmusic", "System Design", "Jukebox","Comentary","Webpages","Playlists","Live","Chill-Out music","Dramedy","Ghazal","Rapping","Recently Uploaded"," New to you"];
 
 const catSelect = document.querySelector('.category-selection')
 
@@ -51,4 +52,16 @@ vids.forEach(vid=>{
   
   `
   videos.appendChild(videoCard)
+})
+function Meme(){
+  window.location.href='meme.index.html'
+}
+let catMeme= document.querySelectorAll(".category")
+catMeme.forEach(element => {
+  element.addEventListener('click',Meme);
+});
+let viMeme = document.querySelectorAll(".video-card")
+viMeme.forEach(element => {
+  element.addEventListener('click',Meme);
+});
 })
